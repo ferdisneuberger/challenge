@@ -11,9 +11,13 @@ router.get("/", (req, res) => {
 router.get("/:id", (req, res) => {
   const id = Number(req.params.id);
   const task = tasks.find((item) => item.id === id);
-
-  console.log("task", task.title);
-  res.json(task);
+  
+  if(!task){
+    return res.status(404).json("tarefa não encontrada");
+  }
+  
+  console.log("task", task?.title);
+  return res.json(task);
 });
 
 router.post("/", (req, res) => {
