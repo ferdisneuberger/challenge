@@ -1,0 +1,21 @@
+{
+  "name": "challenge-api-tarefas",
+  "version": "1.0.0",
+  "description": "Desafio de depuracao de uma API de tarefas em Node.js com Express",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "challenge",
+    "api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
